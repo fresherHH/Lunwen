@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>图像篡改检测系统应用</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="../static/icon.png">
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>-->
+
+</head>
+
+<body class="bg">
+<!--<h3>请选择图片文件：PNG/JPG/JPEG/SVG/GIF</h3>-->
+
+<div>
+    <a href="{{url_for('localization')}}">
+        <button style="width: 100px;height: 60px;background-color:#C71585; font-size: medium">
+            图像篡改检测
+        </button>
+      </a>
+</div>
+
+
+<div style="text-align: center;margin-top:100px;" >
+
+      <img style="margin-top:20px;width: 25rem;height: 20rem;" src="data:;base64,{{ img_stream }}">
+
+</div>
+
+<style>
+    .bg{
+        background-image: url("../static/b2.png");
+        background-size: 100%;
+    }
+</style>
+
+</body>
+</html>
+
+

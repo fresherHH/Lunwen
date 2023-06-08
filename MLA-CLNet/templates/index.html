@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>图像篡改检测系统应用</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="../static/icon.png">
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+</head>
+</head>
+<body class="bg" >
+
+    <div class="tit">
+        图像篡改检测与定位系统
+    </div>
+
+    <a href="{{url_for('detection')}}"  class="butt1">
+        <button style="width: 100px;height: 60px;background-color:#C71585; font-size: medium">
+            图像篡改检测
+        </button>
+    </a>
+
+    <a href="{{url_for('localization')}}" class="butt2">
+        <button style="width: 100px;height: 60px;background-color:#C71585; font-size: medium">
+            图像篡改定位
+        </button>
+    </a>
+
+
+</body>
+
+
+<style type="text/css">
+    .bg{
+        background-image: url(../static/b1.png);
+        background-size: 100%;
+    }
+    .tit{
+        text-align: center;
+        font-size: 100px;
+        position: absolute;
+        top: 25%;
+        left: 10%;
+    }
+    .butt1{
+
+        float: left;
+        font-size: 50px;
+        position: relative;
+        left: 350px;
+        top: 450px;
+    }
+    .butt2{
+
+        float: left;
+        font-size: 50px;
+        position: relative;
+        left: 750px;
+        top: 450px;
+    }
+</style>
+
+</html>
